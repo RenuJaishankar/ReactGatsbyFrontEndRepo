@@ -11,7 +11,7 @@ const Fruitnavbar = () => (
                    
       <div style={{ height: 50}}>
       <a className="navbar-item" style={{fontSize:30,fontWeight:"bold",fontFamily:"Verdana"}}>
-   
+       
         Super Cool Fruit API
                </a>
        </div>         

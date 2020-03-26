@@ -1,34 +1,36 @@
 import React from "react"
+import "./table.sass"
 import "./mystyles.scss"
-import Fruitnavbar from "../components/fruitnavbar.js"
+import Majornavbar from "../components/majornavbar.js"
 import Imgfruit from "../components/apple.png"
+import Imgmajor from "../components/collegemajor.png"
 import Imgbck from "../images/fruitimage.png"
 import { graphql } from 'gatsby'
 //import Newheading from "../components/NewHeading.js"
 const newmajorpage = ({ data }) => (
-  <div className="container" style={{backgroundImage:`url("https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_960_720.jpg")`}}>
+  <div className="container" style={{backgroundImage:`url("https://cdn.pixabay.com/photo/2016/04/15/04/02/water-1330252_960_720.jpg")`}}>
 
   
-    
-    <div className="columns">
+    <Majornavbar/>
+    <div className="columns ">
 
       
-      <div className="column">
+      <div className="column is-one-quarter">
         <input id="Title" className="input" type="text" placeHolder="MAJOR"></input>
 
       </div>
-      <div className="column">
+      <div className="column is-one-quarter">
         <input id="Title" className="input" type="text" placeHolder="NUMBER OF KIDS"></input>
 
       </div>
       
-      <div className= "column">
-        <button class="button"  >SUBMIT DETAILS</button>
+      <div className= "column is-one-third">
+        <button class="button" type="submit" >SUBMIT DETAILS</button>
       </div>
 
       </div>
         
-        <table className="table" >
+        <table className="table is-bordered is-striped is-hoverable is-fullwidth" >
         <thead style = {{fontSize:20,fontFamily:"Lucida Sans"}}>
               TABLE WITH STUDENTS IN PARTICULAR MAJOR.
             </thead>
@@ -61,7 +63,24 @@ const newmajorpage = ({ data }) => (
 
             </tbody>
         </table>
-      
+        <footer class="footer">
+  <div className="level-left">
+    <div className="level-item">
+    <p>
+    <img src="https://www.pngrepo.com/png/65101/180/books.png" width="50" height="50" />
+    </p>
+    </div>
+  </div>
+  
+  <div className="level-right">
+    <div className="level-item">
+    <p>
+    <img src="https://www.pngrepo.com/png/251994/180/books-book.png" width="50" height="50" />
+    </p>
+    </div>
+  </div>
+
+</footer>
     </div>
   
 
