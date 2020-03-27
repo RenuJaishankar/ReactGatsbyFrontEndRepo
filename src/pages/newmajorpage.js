@@ -1,6 +1,6 @@
 import React from "react"
-import "./table.sass"
-import "./mystyles.scss"
+//import "./table.sass"
+//import "./mystyles.scss"
 import Majornavbar from "../components/majornavbar.js"
 import Imgfruit from "../components/apple.png"
 import Imgmajor from "../components/collegemajor.png"
