@@ -61,6 +61,11 @@ const ArcadePage = () => {
             </button>
             </a> 
             </div>
+            <div style={{marginLeft:175}}>
+                <h1 className="title">
+                        Game and number of players.
+                </h1>
+            </div>
             {/* this is a custom component from Apollo, note how we're passing our query */}
             <div style ={{marginLeft:"200px"}}>
             <Query query={APOLLO_QUERY}>
@@ -71,13 +76,15 @@ const ArcadePage = () => {
 
                     return <div>
                         {/* simple map higher order function that will render all of our games */}
+
                         {data.arcadeGames.map(el =>
+                           
                             <div className="columns">
-                                <div className="column is-8 has-background-primary has-text-white" style={{height:50,width:200, padding: 3}}>
+                                <div className="column is-8 has-background-primary has-text-black" style={{marginTop:40,height:50,width:200, padding: 3}}>
                                      Name:{el.name}<br></br>
                                 </div>
 
-                                <div className="column has-background-primary has-text-white" style={{marginLeft:"205px",height:50,width:200,padding:3 }} >
+                                <div className="column has-background-primary has-text-black" style={{marginTop:50,marginLeft:"205px",height:50,width:200,padding:3 }} >
                                         Amount of players: {el.amountOfPlayers}
                                 </div>
                                                          
