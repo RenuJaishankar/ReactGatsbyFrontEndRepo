@@ -5,7 +5,13 @@ module.exports = {
     author: `@gatsbyjs`,
   },
   plugins: [
-    `gatsby-plugin-sass`,
+    // resolve: `gatsby-plugin-sass`,
+    // options: {
+    //   cssLoaderOptions: {
+    //     camelCase: false,
+    //   },
+    // },
+    
     `gatsby-plugin-react-helmet`,
    /* 'gatsby-plugin-theme-ui', */
     {

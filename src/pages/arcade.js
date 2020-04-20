@@ -2,13 +2,17 @@ import React, { useState } from 'react'
 import { Link } from "gatsby"
 /*import { jsx, IconButton } from 'theme-ui'
 import { Flex, Button, Box, Card, Image, Text } from 'theme-ui' */
+
 import 'bulma/css/bulma.css'
+//import './styles.sass'
+//import './button.sass'
 import { graphql } from 'gatsby'
 import { useMutation } from '@apollo/react-hooks'
 import { Query } from 'react-apollo'
 import gql from 'graphql-tag'
 
 //note that gql is a function //
+//new comment
 const ADD_GAME = gql`
 
 mutation ($name: String, $amountOfPlayers: Int) {
